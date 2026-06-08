@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 <html>
 <head>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -21,7 +21,7 @@
 
 <div class="container">
 <h2>Welcome User</h2>
-<img src="images/hospital.jpg" width="100%">
+<img src="hospital.jpg" width="100%">
 </div>
 
 </body>
