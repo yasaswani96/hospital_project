@@ -26,7 +26,7 @@ header("Location: manage_doctors.php");
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
