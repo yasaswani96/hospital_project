@@ -1,0 +1,395 @@
+body{
+font-family:Arial;
+margin:0;
+background:#f2f2f2;
+}
+
+header{
+background:#003366;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+nav{
+background:#0055aa;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+}
+
+.container{
+width:90%;
+margin:auto;
+background:white;
+padding:20px;
+margin-top:20px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+border:1px solid gray;
+padding:10px;
+text-align:center;
+}
+
+th{
+background:#007bff;
+color:white;
+}
+
+button{
+padding:10px;
+background:green;
+color:white;
+border:none;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fb;
+    margin: 0;
+    padding: 20px;
+}
+
+/* headings */
+h2 {
+    text-align: center;
+    color: #003366;
+}
+
+/* tables */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 10px gray;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* forms */
+form {
+    width: 60%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px;
+}
+
+input, select {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background: green;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkgreen;
+}
+body {
+    font-family: Arial, "Noto Sans Telugu", sans-serif;
+}
+/* Login form center */
+form {
+    width: 350px;
+    margin: 100px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px gray;
+}
+
+/* center heading */
+h2 {
+    text-align: center;
+    color: #003366;
+    margin-top: 50px;
+}
+/* Admin Dashboard */
+.dashboard {
+    width: 500px;
+    margin: 80px auto;
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px gray;
+}
+
+.dashboard h1 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.dashboard p {
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.menu a {
+    display: block;
+    margin: 15px;
+    padding: 15px;
+    text-decoration: none;
+    background: #007bff;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    background: #0056b3;
+}
+
+.logout {
+    background: red !important;
+}
+
+.logout:hover {
+    background: darkred !important;
+}
+/* dashboard buttons */
+.menu a{
+display:block;
+padding:15px;
+margin:15px;
+background:#007bff;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-size:18px;
+}
+
+.menu a:hover{
+background:#0056b3;
+}
+
+/* edit button */
+.edit-btn{
+background:orange;
+padding:8px 15px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+/* confirm button */
+.confirm-btn{
+background:green;
+padding:10px;
+border:none;
+color:white;
+border-radius:5px;
+}
+
+/* dashboard */
+.dashboard{
+width:500px;
+margin:60px auto;
+background:white;
+padding:30px;
+text-align:center;
+box-shadow:0 0 15px gray;
+border-radius:15px;
+}
+.edit-btn{
+    background:orange;
+    color:white;
+    padding:8px 15px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.edit-btn:hover{
+    background:darkorange;
+}
+
+.confirm-btn{
+    background:green;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+}
+
+.confirm-btn:hover{
+    background:darkgreen;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+
+    background-image:url('../images/hospital2.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+/* Dark overlay */
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    z-index:-1;
+}
+
+/* Main container */
+.container{
+    width:90%;
+    margin:auto;
+    margin-top:40px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0px 0px 10px gray;
+}
+
+/* Headings */
+h1,h2,h3{
+    text-align:center;
+    color:#0b4f6c;
+}
+
+/* Tables */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:white;
+}
+
+table th{
+    background:#0b4f6c;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    border:1px solid #ccc;
+    padding:10px;
+    text-align:center;
+}
+
+/* Forms */
+form{
+    width:50%;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px gray;
+}
+
+input,select{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+/* Buttons */
+button{
+    background:#0b4f6c;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#06364a;
+}
+
+/* Confirm button */
+.confirm-btn{
+    background:green;
+}
+
+.confirm-btn:hover{
+    background:darkgreen;
+}
+
+/* Edit button */
+.edit-btn{
+    background:orange;
+    color:white;
+    padding:8px 15px;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+.edit-btn:hover{
+    background:darkorange;
+}
+h1,h2,h3{
+
+    color:white;
+    text-align:center;
+
+    background:rgba(0,0,0,0.7);
+
+    padding:15px;
+
+    border-radius:10px;
+
+    width:fit-content;
+
+    margin:auto;
+    margin-bottom:20px;
+
+    box-shadow:0px 0px 10px black;
+
+    letter-spacing:1px;
+}
+table th{
+    background:#0b4f6c;
+    color:white;
+    font-size:18px;
+    padding:15px;
+}
+label{
+    font-weight:bold;
+    color:white;
+    background:rgba(0,0,0,0.6);
+    padding:5px 10px;
+    border-radius:5px;
+}
+background-image: url('hospital2.jpg');
