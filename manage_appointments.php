@@ -6,7 +6,7 @@ include 'db_connect.php';
 <html>
 <head>
     <title>Manage Appointments</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
