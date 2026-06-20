@@ -1,5 +1,4 @@
 <?php
-
 $conn = mysqli_connect(
     "acela.proxy.rlwy.net",
     "root",
