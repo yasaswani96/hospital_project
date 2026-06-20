@@ -1,7 +1,7 @@
 <?php include 'db_connect.php'; ?>
 <html>
 <head>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
