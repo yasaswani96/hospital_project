@@ -27,7 +27,7 @@ header("Location: manage_timings.php");
 <html>
 <head>
     <title>Edit Timing</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
