@@ -1,12 +1,13 @@
 <?php
-$conn=mysqli_connect(
-    "sql204.infinityfree.com",
-    "if0_42032401",
-    "sswani92",
-    "if0_42032401_hospitaldb"
+$conn = mysqli_connect(
+    "acela.proxy.rlwy.net",
+    "root",
+    "NzpIWaLGqSYBSHenpuQiExvVxvSrFPUI",
+    "railway",
+    47288
 );
 
-if(!$conn){
-    die("Connection failed: ".mysqli_connect_error());
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
 }
 ?>
