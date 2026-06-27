@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,3 +33,39 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <title>తెలుగు సమాచారం</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>హాస్పిటల్ సమాచారం</h2>
+
+<table>
+    <tr>
+        <th>విభాగం</th>
+        <th>సేవ</th>
+    </tr>
+
+    <tr>
+        <td>కార్డియాలజీ</td>
+        <td>హార్ట్ చెకప్</td>
+    </tr>
+
+    <tr>
+        <td>న్యూరాలజీ</td>
+        <td>మెదడు చికిత్స</td>
+    </tr>
+
+    <tr>
+        <td>ఆర్థోపెడిక్</td>
+        <td>ఎముకల చికిత్స</td>
+    </tr>
+</table>
+
+</body>
+</html>
+>>>>>>> 2c4d01f9adebee62e3040483ea3380205936278a

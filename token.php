@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php include 'db_connect.php'; ?>
 <!DOCTYPE html>
 <html>
@@ -30,3 +31,37 @@ while($row=mysqli_fetch_assoc($result)){
 
 </body>
 </html>
+=======
+<?php include 'db_connect.php'; ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Token</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Token Details</h2>
+
+<table>
+<tr>
+    <th>Patient Name</th>
+    <th>Doctor</th>
+    <th>Token</th>
+</tr>
+
+<?php
+$result=mysqli_query($conn,"SELECT * FROM appointments");
+while($row=mysqli_fetch_assoc($result)){
+    echo "<tr>
+            <td>".$row['patient_name']."</td>
+            <td>".$row['doctor_name']."</td>
+            <td>".$row['token_no']."</td>
+          </tr>";
+}
+?>
+</table>
+
+</body>
+</html>
+>>>>>>> 2c4d01f9adebee62e3040483ea3380205936278a
