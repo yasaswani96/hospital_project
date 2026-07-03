@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Appointment | Government Hospital</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--================ HEADER ================-->
+
+<div class="top-header">
+
+<div class="container">
+
+<div class="logo-section">
+
+<img src="images/logo.png">
+
+<div class="logo-text">
+
+<h1>ప్రభుత్వ ఆసుపత్రి</h1>
+
+<p>సేవ • కరుణ • ఆరోగ్యం</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!--================ NAVIGATION ================-->
+
+<nav>
+
+<div class="container nav-container">
+
+<ul>
+
+<li><a href="index.html">హోమ్</a></li>
+
+<li><a href="doctors.html">వైద్యులు</a></li>
+
+<li><a href="departments.html">విభాగాలు</a></li>
+
+<li><a href="timings.html">ఓపీ సమయాలు</a></li>
+
+<li><a href="appointment.html" class="active">అపాయింట్మెంట్</a></li>
+
+<li><a href="contact.html">సంప్రదించండి</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+<!--================ PAGE TITLE ================-->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<h1>అపాయింట్మెంట్ బుక్ చేయండి</h1>
+
+<p>
+
+మీ అపాయింట్మెంట్ బుక్ చేసుకోవడానికి క్రింది ఫారమ్‌ను పూరించండి.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================ APPOINTMENT FORM ================-->
+
+<section class="services">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>అపాయింట్మెంట్ ఫారమ్</h2>
+
+</div>
+
+<form action="php/appointment.php"
+method="POST"
+class="appointment-form"
+onsubmit="return validateAppointment()">
+
+<div class="form-group">
+
+<label>రోగి పేరు</label>
+
+<input
+type="text"
+id="name"
+name="name"
+placeholder="పూర్తి పేరు నమోదు చేయండి"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>వయస్సు</label>
+
+<input
+type="number"
+name="age"
+placeholder="వయస్సు నమోదు చేయండి"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>లింగం</label>
+
+<select name="gender">
+
+<option>పురుషుడు</option>
+
+<option>స్త్రీ</option>
+
+<option>ఇతరులు</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>మొబైల్ నంబర్</label>
+
+<input
+type="tel"
+id="mobile"
+name="mobile"
+maxlength="10"
+placeholder="మొబైల్ నంబర్ నమోదు చేయండి"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>చిరునామా</label>
+
+<textarea
+name="address"
+rows="4"
+placeholder="చిరునామా నమోదు చేయండి"></textarea>
+
+</div>
+
+<div class="form-group">
+
+<label>విభాగం</label>
+
+<select name="department">
+
+<option>సాధారణ వైద్యం</option>
+
+<option>గైనకాలజీ</option>
+
+<option>సాధారణ శస్త్రచికిత్స</option>
+
+<option>దంత వైద్యం</option>
+
+<option>శిశు వైద్యం</option>
+
+<option>అనస్థీషియా</option>
+
+<option>ఎన్‌సీడీ క్లినిక్</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>వైద్యుడు</label>
+
+<select name="doctor">
+
+<option>డా. బాలకృష్ణ</option>
+
+<option>డా. స్వరాజలక్ష్మి</option>
+
+<option>డా. ఐశ్వర్య రాజలక్ష్మి</option>
+
+<option>డా. ఝాన్సీ</option>
+
+<option>డా. రమేష్ నాయుడు</option>
+
+<option>డా. శరత్ చంద్ర</option>
+
+<option>డా. నిహారిక శ్రీ</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>అపాయింట్మెంట్ తేదీ</label>
+
+<input
+type="date"
+name="date"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>అపాయింట్మెంట్ సమయం</label>
+
+<input
+type="time"
+name="time"
+required>
+
+</div>
+
+<div class="form-buttons">
+
+<button
+type="submit"
+class="btn blue">
+
+అపాయింట్మెంట్ బుక్ చేయండి
+
+</button>
+
+<button
+type="reset"
+class="btn red">
+
+రీసెట్ చేయండి
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</section>
+
+<!--================ FOOTER ================-->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-content">
+
+<h2>ప్రభుత్వ ఆసుపత్రి సమాచార వ్యవస్థ</h2>
+
+<p>
+
+ప్రతి ఒక్కరికీ నాణ్యమైన ఆరోగ్య సేవలు
+
+</p>
+
+<hr>
+
+<p class="copyright">
+
+© 2026 ప్రభుత్వ ఆసుపత్రి
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+<script src="js/validation.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Appointment | Government Hospital</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--================ HEADER ================-->
+
+<div class="top-header">
+
+<div class="container">
+
+<div class="logo-section">
+
+<img src="images/logo.png">
+
+<div class="logo-text">
+
+<h1>Government Hospital</h1>
+
+<p>CARE • COMPASSION • SERVICE</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!--================ NAVIGATION ================-->
+
+<nav>
+
+<div class="container nav-container">
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="doctors.html">Doctors</a></li>
+
+<li><a href="departments.html">Departments</a></li>
+
+<li><a href="timings.html">OP Timings</a></li>
+
+<li><a href="appointment.html" class="active">Book Appointment</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+<!--================ PAGE TITLE ================-->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<h1>BOOK APPOINTMENT</h1>
+
+<p>
+
+Fill the form below to book your appointment.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================ APPOINTMENT FORM ================-->
+
+<section class="services">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Appointment Form</h2>
+
+</div>
+
+<form action="php/appointment.php"
+method="POST"
+class="appointment-form"
+onsubmit="return validateAppointment()">
+
+<div class="form-group">
+
+<label>Patient Name</label>
+
+<input
+type="text"
+id="name"
+name="name"
+placeholder="Enter Full Name"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Age</label>
+
+<input
+type="number"
+name="age"
+placeholder="Enter Age"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Gender</label>
+
+<select name="gender">
+
+<option>Male</option>
+
+<option>Female</option>
+
+<option>Other</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Mobile Number</label>
+
+<input
+type="tel"
+id="mobile"
+name="mobile"
+maxlength="10"
+placeholder="Enter Mobile Number"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Address</label>
+
+<textarea
+name="address"
+rows="4"
+placeholder="Enter Address"></textarea>
+
+</div>
+
+<div class="form-group">
+
+<label>Department</label>
+
+<select name="department">
+
+<option>General Medicine</option>
+
+<option>Gynaecology</option>
+
+<option>General Surgery</option>
+
+<option>Dental</option>
+
+<option>Pediatrics</option>
+
+<option>Anesthesia</option>
+
+<option>NCD Clinic</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Doctor</label>
+
+<select name="doctor">
+
+<option>Dr. Balakrishna</option>
+
+<option>Dr. Swarajalaxmi</option>
+
+<option>Dr. Aiswaraya Rajalaxmi</option>
+
+<option>Dr. Jhansi</option>
+
+<option>Dr. Rameshnaidu</option>
+
+<option>Dr. Sharath Chandra</option>
+
+<option>Dr. Niharika Sri</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Appointment Date</label>
+
+<input
+type="date"
+name="date"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Appointment Time</label>
+
+<input
+type="time"
+name="time"
+required>
+
+</div>
+
+<div class="form-buttons">
+
+<button
+type="submit"
+class="btn blue">
+
+Book Appointment
+
+</button>
+
+<button
+type="reset"
+class="btn red">
+
+Reset
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</section>
+
+<!--================ FOOTER ================-->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-content">
+
+<h2>Government Hospital Information System</h2>
+
+<p>
+
+Quality Healthcare For Everyone
+
+</p>
+
+<hr>
+
+<p class="copyright">
+
+© 2026 Government Hospital
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+<script src="js/validation.js"></script>
+
+</body>
+
+</html>

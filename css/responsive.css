@@ -1,0 +1,191 @@
+/*=========================================
+        RESPONSIVE DESIGN
+=========================================*/
+
+/* Laptop */
+
+@media (max-width:1200px){
+
+.container{
+    width:95%;
+}
+
+.hero-content h1{
+    font-size:45px;
+}
+
+.hero-content h2{
+    font-size:30px;
+}
+
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+.top-header .container{
+    flex-direction:column;
+    text-align:center;
+}
+
+.header-contact{
+    justify-content:center;
+    margin-top:15px;
+}
+
+.hero-container{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-content{
+    width:100%;
+}
+
+.hero-image img{
+    max-width:450px;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.section-title h2{
+    font-size:32px;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.logo-section{
+    flex-direction:column;
+    text-align:center;
+}
+
+.logo-section img{
+    margin-bottom:10px;
+}
+
+.logo-text h1{
+    font-size:24px;
+}
+
+.header-contact{
+    flex-direction:column;
+    gap:10px;
+}
+
+nav ul{
+    flex-direction:column;
+}
+
+nav ul li{
+    width:100%;
+}
+
+nav ul li a{
+    text-align:center;
+    border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.hero{
+    padding:50px 0;
+}
+
+.hero-content h1{
+    font-size:34px;
+}
+
+.hero-content h2{
+    font-size:24px;
+}
+
+.hero-content p{
+    font-size:16px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+}
+
+.btn{
+    width:100%;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:100%;
+}
+
+.service-container,
+.doctor-container,
+.department-container{
+    grid-template-columns:1fr;
+}
+
+.timing-table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+.contact-details{
+    padding:25px;
+}
+
+.footer-content h2{
+    font-size:24px;
+}
+
+}
+
+/* Small Mobile */
+
+@media (max-width:480px){
+
+.container{
+    width:95%;
+}
+
+.hero-content h1{
+    font-size:28px;
+}
+
+.hero-content h2{
+    font-size:20px;
+}
+
+.section-title h2{
+    font-size:26px;
+}
+
+.service-card,
+.doctor-card,
+.department-card{
+    margin:10px 0;
+}
+
+.contact-details p{
+    font-size:15px;
+}
+
+.social-icons a{
+    width:40px;
+    height:40px;
+    font-size:16px;
+}
+
+footer{
+    padding:40px 15px;
+}
+
+}

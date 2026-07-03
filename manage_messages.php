@@ -1,22 +1,5 @@
 <?php
 include 'php/db.php';
-if(isset($_GET['toggle']))
-{
-    $id = (int)$_GET['toggle'];
-
-    $result = mysqli_query($conn, "SELECT availability FROM doctors WHERE doctor_id='$id'");
-    $row = mysqli_fetch_assoc($result);
-
-    if($row['availability'] == "Available")
-        $status = "Unavailable";
-    else
-        $status = "Available";
-
-    mysqli_query($conn, "UPDATE doctors SET availability='$status' WHERE doctor_id='$id'");
-
-    header("Location: manage_doctors.php");
-    exit();
-}
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +10,7 @@ if(isset($_GET['toggle']))
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Manage Departments</title>
+<title>Manage Messages</title>
 
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
@@ -92,7 +75,7 @@ body{
 
 .top-bar h2{
     color:#1565c0;
-    font-size:42px;
+    font-size:38px;
     font-weight:bold;
 }
 
@@ -119,15 +102,11 @@ background:#218838;
 }
 
 table{
-
-width:100%;
-
-border-collapse:collapse;
-
-background:white;
-
-box-shadow:0 8px 20px rgba(0,0,0,.1);
-
+    width:95%;
+    margin:0 auto;
+    border-collapse:collapse;
+    background:#fff;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
 }
 
 table th{
@@ -183,13 +162,17 @@ border-radius:5px;
 }
 
 .delete-btn{
-    background:#dc3545;
-    color:#fff;
-    padding:10px 18px;
-    text-decoration:none;
-    border-radius:6px;
-    display:inline-block;
-    font-weight:bold;
+
+background:#dc3545;
+
+color:white;
+
+padding:8px 15px;
+
+text-decoration:none;
+
+border-radius:5px;
+
 }
 
 .edit-btn:hover{
@@ -217,32 +200,18 @@ text-align:center;
 padding:15px;
 
 }
+
 .action-buttons{
-    text-align:center;
-}
-
-.edit-btn,
-.delete-btn{
-    display:inline-block;
-    padding:8px 15px;
-    border-radius:5px;
-    color:#fff;
-    text-decoration:none;
-    font-size:15px;
-    min-width:85px;
-    text-align:center;
-}
-
-.edit-btn{
-    background:#0d6efd;
-}
-
-.edit-btn:hover{
-    background:#0b5ed7;
+    display:flex;
+    justify-content:center;
 }
 
 .delete-btn{
     background:#dc3545;
+    color:#fff;
+    padding:10px 20px;
+    border-radius:5px;
+    text-decoration:none;
 }
 
 .delete-btn:hover{
@@ -299,31 +268,17 @@ Welcome Admin
 
 <div class="top-bar">
 
-<h2>Manage Departments</h2>
+<h2>Manage Messages</h2>
 
 </div>
 
 <table>
 
-<tr>
 
-<th>ID</th>
-
-<th>Department Name</th>
-
-<th>Doctor Name</th>
-
-<th>Location</th>
-
-<th>Description</th>
-
-<th>Action</th>
-
-</tr>
 
 <?php
 
-$result=mysqli_query($conn,"SELECT * FROM departments");
+$result = mysqli_query($conn, "SELECT * FROM contact_messages ORDER BY message_id DESC");
 
 while($row=mysqli_fetch_assoc($result))
 {
@@ -332,24 +287,42 @@ while($row=mysqli_fetch_assoc($result))
 
 <tr>
 
-<td><?php echo $row['department_id']; ?></td>
+<th>ID</th>
 
-<td><?php echo $row['department_name']; ?></td>
+<th>Name</th>
 
-<td><?php echo $row['doctor_name']; ?></td>
+<th>Email</th>
 
-<td><?php echo $row['location']; ?></td>
+<th>Mobile</th>
 
-<td><?php echo $row['description']; ?></td>
+<th>Message</th>
+
+<th>Date</th>
+
+<th>Action</th>
+
+</tr>
+
+<tr>
+
+<td><?php echo $row['message_id']; ?></td>
+
+<td><?php echo $row['name']; ?></td>
+
+<td><?php echo $row['email']; ?></td>
+
+<td><?php echo $row['mobile']; ?></td>
+
+<td><?php echo $row['message']; ?></td>
+
+<td><?php echo $row['created_at']; ?></td>
 
 <td class="action-buttons">
 
-<a href="delete_department.php?id=<?php echo $row['department_id']; ?>"
+<a href="delete_message.php?id=<?php echo $row['message_id']; ?>"
 class="delete-btn"
-onclick="return confirm('Are you sure you want to delete this department?')">
-
+onclick="return confirm('Delete this message?')">
 <i class="fa-solid fa-trash"></i> Delete
-
 </a>
 
 </td>
