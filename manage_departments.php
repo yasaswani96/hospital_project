@@ -299,7 +299,11 @@ Welcome Admin
 
 <div class="top-bar">
 
-<h2>Manage Departments</h2>
+    <h2>Manage Departments</h2>
+
+    <a href="add_department.php" class="add-btn">
+        <i class="fa-solid fa-plus"></i> Add Department
+    </a>
 
 </div>
 

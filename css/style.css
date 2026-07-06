@@ -43,6 +43,33 @@ body{
     flex-wrap:wrap;
 }
 
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.top-bar h2{
+    color:#1565c0;
+    font-size:30px;
+    font-weight:bold;
+    margin:0;
+}
+
+.add-btn{
+    background:#1565c0;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.add-btn:hover{
+    background:#0d47a1;
+}
+
 .logo-section{
     display:flex;
     align-items:center;
@@ -416,16 +443,6 @@ nav ul li a.active{
 .btn-center{
     text-align:center;
     margin-top:20px;
-}
-.btn.navy{
-    background:#0d47a1;
-    color:#fff;
-    border:none;
-}
-
-.btn.navy:hover{
-    background:#08306b;
-    color:#fff;
 }
 
 /*=========================================

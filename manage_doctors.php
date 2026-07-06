@@ -231,8 +231,11 @@ footer{
 
 <div class="top-bar">
 
-<h2>Manage Doctors</h2>
+    <h2>Manage Doctors</h2>
 
+    <a href="add_doctor.php" class="add-btn">
+        <i class="fa-solid fa-plus"></i> Add Doctor
+    </a>
 
 </div>
 
